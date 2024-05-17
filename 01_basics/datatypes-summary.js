@@ -33,3 +33,18 @@ const myFunction = function () {
 myFunction()
 
 console.log(typeof heros);
+
+//--------------------------------------------
+
+// Stack(Primitive) => Copy milti hai
+// & Heap(Non-primitive)  => reference milta hai
+
+let userOne = {
+    email: "rushi@gmail.com"
+}
+
+let userTwo = userOne
+userTwo.email = "rushikesh@gmail.com"
+
+console.log(userOne);
+console.log(userTwo);
